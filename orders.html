@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="order-section">
+    <h2>PLACE YOUR ORDER</h2>
+    <form action="submit_order.php" method="POST">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="cake">Type Of Cake / Decorations:</label>
+        <textarea name="cake" id="cake" rows="4" required></textarea>
+
+        <label for="address">Delivery Address:</label>
+        <textarea name="address" id="address" rows="3"></textarea>
+        
+        <label for="contact">Your Phone Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+
+        <button type="submit">Submit Your Order</button>
+
+     </form>
+     <p class="contact-info">For Quick Help , Call Us: <strong>
+        +256786326326 
+     </strong></p>
+    </section>
+    <nav>
+        <a href="index.html"> Click Back To Main Page</a>
+    </nav>
+
+</body>
+</html>
