@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOD'S PLAN CAKES AND GIFT HUB</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <header class="video-header">
+    <video autoplay muted loop class="bg-video">
+        <source src="cake-bg.mp4" type="video/mp4">
+        your browser doesnt support this video. 
+    </video>
+    <div class="header-content">
+        <h1>WELCOME TO GOD'S PLAN CAKES AND GIFT HUB</h1>
+        <P>We have all you need.</P>
+        <nav> 
+            <a href="orders.html">PLACE YOUR ORDER NOW</a>
+        </nav>
+</div>
+</header>
+    <nav>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Contact</a></li>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>ABOUT US</h2>
+            <P>We bake the freshest cakes in town, very tasty and delicious. We do bake cakes for any 
+                occation or celebration these celebrations include birthday parties, anniversaries, school celebrations,
+                weddings, introductions, proposals, and many others you tell us what u want and we deliver.
+            </P>
+
+        </section>
+        <section class="slideshow">
+            <img class="slides" src="cake1.jpg" alt="Wedding Cake">
+            <img class="slides" src="cake2.jpg" alt="Birthday Cake">
+            <img class="slides" src="cake3.jpg" alt="Room Decor">
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SweetBite Cakes. All Rights reserved</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let slides = 
+            document.getElementsByClassName
+            ("slides");
+            for (let i = 0; i < slides. length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides. length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides,3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
